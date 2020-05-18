@@ -58,7 +58,7 @@ public class MatchesServiceImplTest {
     public void testSaveMatchesforDb() throws Exception {
         List<Matches> matchesList = new ArrayList<>();
         matchesList.add(matches);
-        matchesService.saveAllfromJson(matchesList);
+        matchesService.saveAllFromJson(matchesList);
         verify(matchesRepository, times(matchesList.size())).save(any(Matches.class));
         verify(cityRepository, times(matchesList.size())).save(any(City.class));
     }

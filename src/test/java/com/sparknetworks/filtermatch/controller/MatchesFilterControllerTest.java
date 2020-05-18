@@ -72,7 +72,7 @@ public class MatchesFilterControllerTest {
                         .andExpect(MockMvcResultMatchers.status().isCreated())
                         .andReturn().getResponse();
 
-        verify(matchesService, times(1)).saveAllfromJson(matchesList);
+        verify(matchesService, times(1)).saveAllFromJson(matchesList);
         ;
 
     }

@@ -1,5 +1,10 @@
 package com.sparknetworks.filtermatch.controller;
 
+/**
+ * MatchesFilter controller , all operations with MatchesFilter goes here
+ *
+ * @author Deepak Srinivas
+ */
 
 import com.sparknetworks.filtermatch.model.Matches;
 import com.sparknetworks.filtermatch.request.FilterRequest;
@@ -23,8 +28,8 @@ public class MatchesFilterController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public void createMatchesforDb(@RequestBody List<Matches> matchesList) {
-        matchesService.saveAllfromJson(matchesList);
+    public void createMatchesForDb(@RequestBody List<Matches> matchesList) {
+        matchesService.saveAllFromJson(matchesList);
     }
 
 

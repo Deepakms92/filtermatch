@@ -1,5 +1,10 @@
 package com.sparknetworks.filtermatch.model;
 
+/**
+ * Domain class for City .
+ *
+ * @author Deepak Srinivas
+ */
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;

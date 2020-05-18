@@ -1,5 +1,11 @@
 package com.sparknetworks.filtermatch.request;
 
+/**
+ * Request Object class for Filter .
+ *
+ * @author Deepak Srinivas
+ */
+
 import lombok.Data;
 
 @Data

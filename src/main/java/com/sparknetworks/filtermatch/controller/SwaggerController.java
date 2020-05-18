@@ -1,5 +1,9 @@
 package com.sparknetworks.filtermatch.controller;
-
+/**
+ * Controller class for swagger.
+ *
+ * @author Deepak Srinivas
+ */
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,8 +15,7 @@ public class SwaggerController {
 
 
     @RequestMapping("/")
-    public String home()
-    {
+    public String home() {
         return "redirect:swagger-ui.html";
     }
 }

@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface MatchesService {
 
-    void saveAllfromJson(List<Matches> matchesList);
+    void saveAllFromJson(List<Matches> matchesList);
 
     List<Matches> findMatchesFilterCriteria(FilterRequest params);
 }

@@ -1,4 +1,10 @@
 package com.sparknetworks.filtermatch.service;
+/**
+ * Service to encapsulate the link between model and controller and to have business logic for some matches filter specific things.
+ *
+ * @author Deepak Srinivas
+ */
+
 
 import com.querydsl.core.BooleanBuilder;
 import com.querydsl.core.types.dsl.BooleanExpression;
@@ -38,8 +44,14 @@ public class MatchesServiceImpl implements MatchesService {
         this.scoreConvertor = scoreConvertor;
     }
 
+
+    /**
+     * Method to save all the items from the given JSON.
+     *
+     * @param matchesList list of the matches list given .
+     */
     @Override
-    public void saveAllfromJson(List<Matches> matchesList) {
+    public void saveAllFromJson(List<Matches> matchesList) {
         for (Matches matches : matchesList) {
             cityRepository.save(matches.getCity());
             matchesRepository.save(matches);
@@ -47,6 +59,13 @@ public class MatchesServiceImpl implements MatchesService {
 
     }
 
+
+    /**
+     * Method to filter out the matches based on the criterias
+     *
+     * @param params Filter Request which encapsulates the search request .
+     * @return List of mtches object .
+     */
     @Override
     public List<Matches> findMatchesFilterCriteria(FilterRequest params) {
         List<Matches> distanceMatchesList = new ArrayList<>();

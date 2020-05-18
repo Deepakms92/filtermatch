@@ -1,5 +1,10 @@
 package com.sparknetworks.filtermatch.constants;
 
+/**
+ * Class to maintain the field Vaues for search to avoid magic number issues.
+ *
+ * @author Deepak Srinivas
+ */
 public class Fields {
 
     public static final Double MAX_HEIGHT = 210.0;

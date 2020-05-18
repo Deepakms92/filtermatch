@@ -1,5 +1,10 @@
 package com.sparknetworks.filtermatch.convertor;
 
+/**
+ * Convertor class to convert percentage into decimals.
+ *
+ * @author Deepak Srinivas
+ */
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
